@@ -34,3 +34,12 @@ def full?(board)
     end
   end
 end
+
+def draw?(board)
+  if full?(board)
+    true
+  else
+    false
+  end
+end
+
