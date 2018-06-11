@@ -60,9 +60,9 @@ def winner?(board)
     def wonder?(board)
       WIN_COMBINATIONS.detect do |mini|
       if  mini.all? { |space| board[space] == "X"}
-        return mini
+        return "X"
       elsif mini.all? { |space| board[space] == "O"}
-        return mini
+        return "O"
       end
       end
     end
