@@ -51,5 +51,7 @@ def over?(board)
     false
   elsif won?(board) && !full(board)
     true
+  else
+    true
   end
 end
