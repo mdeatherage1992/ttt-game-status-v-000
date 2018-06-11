@@ -21,8 +21,10 @@ def won?(board)
     return mini
   elsif mini.all? { |space| board[space] == "O"}
     return mini
+  end
 
-    binding.pry
+
+    #binding.pry
 
   end
 end
