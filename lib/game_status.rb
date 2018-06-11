@@ -27,10 +27,10 @@ end
 
 def full?(board)
   board.all? do |space|
-    if space != " " | space != ""
-      true
-    else
+    if space == " " | space == ""
       false
+    else
+      true
     end
   end
 end
