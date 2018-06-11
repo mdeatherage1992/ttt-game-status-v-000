@@ -17,7 +17,10 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.detect do |mini|
-    mini.all? { |space| board[space] == "X"}
+  if  mini.all? { |space| board[space] == "X"}
+    return mini
+  elsif mini.all? { |space| board[space] == "O"}
+    return mini
 
     binding.pry
 
