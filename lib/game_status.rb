@@ -1,3 +1,4 @@
+require "pry"
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -16,12 +17,8 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.detect do |mini|
-    mini.all? do |space|
-      if board[space] == "X" || board[space] == "O"
-        return mini
-      else
-        false
-      end
+    binding.pry
+
     end
   end
 end
