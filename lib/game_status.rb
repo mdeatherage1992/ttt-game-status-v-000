@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |mini|
-    board[mini].all? do |space|
+    mini.all? do |space|
       if board[space] == "X" || board[space] == "O"
         return mini
       else
