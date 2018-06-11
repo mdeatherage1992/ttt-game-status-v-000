@@ -14,7 +14,7 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
-
+  #binding.pry
 def won?(board)
   WIN_COMBINATIONS.detect do |mini|
   if  mini.all? { |space| board[space] == "X"}
@@ -22,9 +22,5 @@ def won?(board)
   elsif mini.all? { |space| board[space] == "O"}
     return mini
   end
-
-
-    #binding.pry
-
   end
 end
