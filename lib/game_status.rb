@@ -71,5 +71,5 @@ end
       elsif mini.all? { |space| board[space] == "O"}
         return "O"
       end
-      end
     end
+  end
