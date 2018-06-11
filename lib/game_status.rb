@@ -55,7 +55,14 @@ def over?(board)
 end
 
 def winner?(board)
-  if
+  if wonder?(board) == "X"
+    "X"
+  elsif wonder?(board) == "O"
+    "O"
+  else
+    nil
+  end
+end
 
     def wonder?(board)
       WIN_COMBINATIONS.detect do |mini|
