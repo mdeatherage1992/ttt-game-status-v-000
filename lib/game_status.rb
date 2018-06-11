@@ -21,6 +21,7 @@ def won?(board)
       true
     else
       false
+    end
   end
 end
 
