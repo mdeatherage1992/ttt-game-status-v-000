@@ -53,3 +53,16 @@ def over?(board)
     true
   end
 end
+
+def winner?(board)
+  if
+
+    def wonder?(board)
+      WIN_COMBINATIONS.detect do |mini|
+      if  mini.all? { |space| board[space] == "X"}
+        return mini
+      elsif mini.all? { |space| board[space] == "O"}
+        return mini
+      end
+      end
+    end
