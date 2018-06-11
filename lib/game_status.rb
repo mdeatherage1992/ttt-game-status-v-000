@@ -18,7 +18,5 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.detect do |mini|
     binding.pry
-
-    end
   end
 end
