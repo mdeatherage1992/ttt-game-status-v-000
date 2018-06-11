@@ -45,3 +45,15 @@ def draw?(board)
     true
   end
 end
+
+def over?(board)
+  if draw?(board)
+    true
+  end
+  if draw?(board) && full?(board)
+    true
+  end
+  if !full?(board)
+    false
+  end
+end
