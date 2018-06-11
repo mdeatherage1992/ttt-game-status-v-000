@@ -24,3 +24,13 @@ def won?(board)
   end
   end
 end
+
+def full?(board)
+  board.all? do |space|
+    if space != " " | space != ""
+      true
+    else
+      false
+    end
+  end
+end
