@@ -21,6 +21,7 @@ def won?(board)
         return mini
       else
         false
+      end
     end
   end
 end
