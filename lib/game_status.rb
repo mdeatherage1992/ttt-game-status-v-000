@@ -14,6 +14,15 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
+def won?(board)
+  WIN_COMBINATIONS.each do |mini|
+    if position_taken?(board,mini)
+      true
+    else
+      false
+  end
+
+
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
