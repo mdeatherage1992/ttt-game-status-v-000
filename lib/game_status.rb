@@ -48,8 +48,8 @@ end
 
 def over?(board)
   if !full?(board)
-    true
-  else
     false
+  else
+    true
   end
 end
